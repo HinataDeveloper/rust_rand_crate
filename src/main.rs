@@ -13,7 +13,7 @@
 // host: x86_64-unknown-linux-gnu
 // release: 1.102.0-nightly
 // LLVM version: 23.1.5
- 
+// 
 // cargo 1.102.0-nightly (c07ac2c4d 2026-11-06)
 // release: 1.102.0-nightly
 // commit-hash: c07ac2c4d12237effc4b94f4543769b421790045
@@ -27,15 +27,8 @@
 // Kernel Version: 7.2.15-200.fc44.x86_64
 // Firmware Version: 71CN51WW(V1.21)
 
-// use rand::prelude::*;
-
 fn main() {
     println!("\n");
-
-    for index in 1..10 {
-        let value: f64 = rand::random();
-        println!(" -> {index} - {value}");
-    }
 
     println!("\nThe End ...\n");
 }
