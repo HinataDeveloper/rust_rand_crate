@@ -1,8 +1,8 @@
 // lib.rs
-// Date: ... ... ... 2026
+// Date: Tue Nov 10 2026
 // Educational and Practice Rust Programming Language Code
 
-// Dependency: ...
+// Dependency: Depen on `rand` crate
 
 // rustc 1.101.0-nightly (249c1e4e3 2026-11-05)
 // binary: rustc
@@ -11,7 +11,7 @@
 // host: x86_64-unknown-linux-gnu
 // release: 1.101.0-nightly
 // LLVM version: 23.1.5
-// 
+//
 // cargo 1.101.0-nightly (3c747ea3e 2026-11-03)
 // release: 1.101.0-nightly
 // commit-hash: 3c747ea3ead23951c1b43a5edfcbdb449135ddeb

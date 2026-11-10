@@ -1,2 +1,2 @@
-# rust_rand_crate
-Learning rand crate from crates.io
+# Rust `rand` Crate
+Learning Rust `rand` crate from crates.io
