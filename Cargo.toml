@@ -1,5 +1,5 @@
 [package]
-name = "redis_client"
+name = "using_rand"
 version = "0.1.0"
 edition = "2024"
 rust-version = "1.101"
@@ -25,11 +25,9 @@ dbg_macro = "warn"
 # print_stderr = "warn"
 clone_on_ref_ptr = "warn"
 
-# [dependencies.redis]
-# version = "*"
-
 [dependencies]
+rand = "0.10.3"
 
 [[bin]]
-name = "redis-client"
+name = "using-rand"
 path = "src/main.rs"
