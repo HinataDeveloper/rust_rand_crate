@@ -2,7 +2,7 @@
 // Date: Wd Nov 11 2026
 // Educational and Practice Rust Programming Language Code
 
-// Dependency: Depen on `rand` crate
+// Dependency: Depend on `rand` crate
 
 // Kernel Version: 7.3.3-300.fc45.x86_64
 

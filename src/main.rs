@@ -4,7 +4,7 @@
 
 // Project: Learning rand crate
 // Goal: ...
-// Dependency: Depand on `rand` crate
+// Dependency: Depend on `rand` crate
 
 // Kernel Version: 7.3.3-300.fc45.x86_64
 
