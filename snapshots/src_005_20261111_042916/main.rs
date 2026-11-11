@@ -1,0 +1,56 @@
+// main.rs
+// Date: Wed Nov 11 2026
+// Educational and Practice Rust Programming Language Code
+
+// Project: Learning rand crate
+// Goal: ...
+// Dependency: Depand on `rand` crate
+
+// rustc 1.102.0-nightly (ac8310ba6 2026-11-09)
+// binary: rustc
+// commit-hash: ac8310ba643a3796cbe77d2e06944d7c8513999f
+// commit-date: 2026-11-09
+// host: x86_64-unknown-linux-gnu
+// release: 1.102.0-nightly
+// LLVM version: 23.1.5
+//
+// cargo 1.102.0-nightly (c07ac2c4d 2026-11-06)
+// release: 1.102.0-nightly
+// commit-hash: c07ac2c4d12237effc4b94f4543769b421790045
+// commit-date: 2026-11-06
+// host: x86_64-unknown-linux-gnu
+// libgit2: 1.9.6 (sys:0.21.0 vendored)
+// libcurl: 8.21.0-DEV (sys:0.4.90+curl-8.21.0 vendored ssl:OpenSSL/3.6.3)
+// ssl: OpenSSL 3.6.3 9 Jun 2026
+// os: Fedora 44.0.0 [64-bit]
+
+// Kernel Version: 7.3.3-200.fc44.x86_64
+// Firmware Version: 71CN51WW(V1.21)
+
+use rand::RngExt;
+
+fn main() {
+    println!("\n");
+
+    let mut rng = rand::rng();
+    let mut array_one = [0_u64; 19];
+    let distr_result: Result<rand::distr::Uniform<u64>, rand::distr::uniform::Error> =
+        rand::distr::Uniform::new_inclusive(1000, 9000);
+
+    let distr = match distr_result {
+        Ok(uf) => uf,
+        Err(_err) => return,
+    };
+
+    for item in &mut array_one {
+        *item = rng.sample(distr);
+    }
+
+    print!(" [ ");
+    for item in &array_one {
+        print!("{item}, ");
+    }
+    print!("]");
+
+    println!("\nThe End ...\n");
+}
